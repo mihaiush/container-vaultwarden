@@ -1,4 +1,4 @@
-FROM docker.io/vaultwarden/server:1.37.3
+FROM docker.io/vaultwarden/server:1.37.4
 
 # renovate: datasource=github-releases depName=dani-garcia/bw_web_builds
 ENV WEB_VERSION="2026.7.0"
