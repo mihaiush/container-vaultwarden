@@ -1,5 +1,9 @@
 name: Build and Push Docker Image (amd64)
 
+permissions:
+  contents: read
+  packages: write
+
 on:
   pull_request:
     branches: [ "main" ]
