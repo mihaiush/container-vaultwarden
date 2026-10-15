@@ -15,4 +15,4 @@ jobs:
     uses: mihaiush/ci/.github/workflows/docker-publish.yml@main
     with:
       dockervars: |
-       TAG=$(awk -F':' '/FROM /{print $2}' Dockerfile) 
+        TAG=$(awk -F':' '/FROM /{print $2}' Dockerfile)
