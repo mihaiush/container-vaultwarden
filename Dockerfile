@@ -1,9 +1,9 @@
 FROM docker.io/vaultwarden/server:1.37.4
 
-# renovate: datasource=github-releases depName=dani-garcia/bw_web_builds
-ENV WEB_VERSION="2026.7.0"
+# renovate-regex: datasource=github-releases packageName=dani-garcia/bw_web_builds
+ENV WEB_VERSION="v2026.7.0"
 
 RUN \
     cd / &&\
-    curl -Ls https://github.com/dani-garcia/bw_web_builds/releases/download/v${WEB_VERSION}/bw_web_v${WEB_VERSION}.tar.gz | tar -xzf -
+    curl -Ls https://github.com/dani-garcia/bw_web_builds/releases/download/${WEB_VERSION}/bw_web_${WEB_VERSION}.tar.gz | tar -xzf -
 
