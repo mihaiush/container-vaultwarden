@@ -1,7 +1,7 @@
 FROM docker.io/vaultwarden/server:1.37.5
 
 # renovate-vre: datasource=github-releases packageName=dani-garcia/bw_web_builds
-ENV WEB_VERSION="v2026.7.0"
+ENV WEB_VERSION="v2026.10.1"
 
 RUN \
     cd / &&\
