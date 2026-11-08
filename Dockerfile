@@ -1,6 +1,6 @@
 FROM docker.io/vaultwarden/server:1.37.4
 
-# renovate-regex: datasource=github-releases packageName=dani-garcia/bw_web_builds
+# renovate-vre: datasource=github-releases packageName=dani-garcia/bw_web_builds
 ENV WEB_VERSION="v2026.7.0"
 
 RUN \
